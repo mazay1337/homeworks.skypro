@@ -1,5 +1,7 @@
 package skypro.java.course1.hw12;
 
+import java.util.Objects;
+
 public class Book {
     private String title;
     private int publicationYear;
@@ -25,6 +27,21 @@ public class Book {
 
     public void setPublicationYear(int publicationYear) {
         this.publicationYear = publicationYear;
+    }
+
+    public String toString() {
+        return author + " <<" + title + ">> " + publicationYear;
+    }
+
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || this.getClass() != obj.getClass()) return false;
+        Book book = (Book) obj;
+        return publicationYear == book.publicationYear && Objects.equals(title, book.title) && Objects.equals(author, book.author);
+    }
+
+    public int hashCode() {
+        return Objects.hash(author, title, publicationYear);
     }
 }
 
