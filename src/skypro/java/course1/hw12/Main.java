@@ -14,5 +14,10 @@ public class Main {
         Book azazel = new Book(akunin,"Azazel", 1998);
 
         harryPotter1.setPublicationYear(1999);
+
+        System.out.println(harryPotter1);
+        System.out.println(shantaram);
+        System.out.println(azazel);
+
     }
 }
