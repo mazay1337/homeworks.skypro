@@ -43,6 +43,5 @@ public class Book {
     public int hashCode() {
         return Objects.hash(author, title, publicationYear);
     }
-
 }
 

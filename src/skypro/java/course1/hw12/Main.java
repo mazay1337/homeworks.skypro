@@ -18,6 +18,5 @@ public class Main {
         System.out.println(harryPotter1);
         System.out.println(shantaram);
         System.out.println(azazel);
-
     }
 }
